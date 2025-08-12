@@ -1,59 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Doctor Consultation</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #eef2f5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      .landing-container {
-        background-color: #ffffff;
-        padding: 30px 40px;
-        border-radius: 10px;
-        text-align: center;
-        width: 350px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      }
-      .landing-container h1 {
-        margin-bottom: 10px;
-        color: #0077b6;
-      }
-      .landing-container p {
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 20px;
-      }
-      .btn {
-        display: block;
-        background-color: #0077b6;
-        color: #fff;
-        text-decoration: none;
-        padding: 10px;
-        border-radius: 5px;
-        margin: 10px 0;
-        font-size: 15px;
-      }
-      .btn:hover {
-        background-color: #023e8a;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediConnect - Professional Healthcare Consultations</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
     <div class="landing-container">
-      <h1>Welcome</h1>
-      <p>Access professional healthcare consultations anytime, anywhere.</p>
-      <a href="login.php" class="btn">Login</a>
-      <a href="register.php" class="btn">Create Account</a>
+        <div class="landing-card fade-in">
+            <div class="landing-header">
+                <i class="fas fa-stethoscope" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                <h1>MediConnect</h1>
+                <p class="landing-subtitle">Your trusted partner for professional healthcare consultations</p>
+            </div>
+
+            <div class="landing-features">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-user-md feature-icon"></i>
+                        <h4>Expert Doctors</h4>
+                        <p>Certified medical professionals</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <h4>24/7 Available</h4>
+                        <p>Healthcare when you need it</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h4>Secure & Private</h4>
+                        <p>Your health data is protected</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-video feature-icon"></i>
+                        <h4>Multiple Formats</h4>
+                        <p>Text, voice, and video consultations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="landing-buttons">
+                <a href="login.php" class="btn btn-primary btn-lg">
+                    <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem;"></i>
+                    Sign In
+                </a>
+                <a href="register.php" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-user-plus" style="margin-right: 0.5rem;"></i>
+                    Create Account
+                </a>
+            </div>
+
+            <div class="landing-stats">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Expert Doctors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Patients Served</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Average Rating</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
-</html>
+
+    <style>
+        .landing-header {
+            margin-bottom: 2rem;
+        }
+
+        .landing-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        .landing-features {
+            margin: 2rem 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-item {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(37, 99, 235, 0.05);
+            border-radius: var(--radius-md);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-2px);
+        }
+
+        .feature-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item h4 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+
+        .feature-item p {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .landing-buttons {
+            margin: 2rem 0;
+        }
+
+        .landing-stats {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 0.5rem;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        @media (max-width: 768px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .landing-card h1 {
+                font-size: 2rem;
+            }
+        }
