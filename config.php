@@ -21,7 +21,7 @@ session_start(); // Start session for authentication management
 define('DB_HOST', 'localhost');       // MySQL host
 define('DB_USER', 'root');            // MySQL username
 define('DB_PASS', '');                // MySQL password
-define('DB_NAME', 'doctor_consultation_system'); // Database name
+define('DB_NAME', 'test');            // Database name
 
 // ---------------------
 // Database Connection
