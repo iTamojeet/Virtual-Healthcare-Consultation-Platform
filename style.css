@@ -1,0 +1,91 @@
+/* =========================================================
+   General Styles
+   Author: Tamojeet Pal
+   ========================================================= */
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background-color: #eef2f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #0077b6;
+}
+
+/* Form Elements */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="datetime-local"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+input[type="submit"],
+.btn {
+  background-color: #0077b6;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+input[type="submit"]:hover,
+.btn:hover {
+  background-color: #023e8a;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0077b6;
+  overflow: hidden;
+  border-radius: 0 0 8px 8px;
+  padding: 10px;
+}
+.navbar a {
+  color: #fff;
+  padding: 8px 12px;
+  text-decoration: none;
+  display: inline-block;
+}
+.navbar a.right {
+  float: right;
+}
+.navbar a:hover {
+  background-color: #023e8a;
+}
+
+/* Chat Box */
+.chat-box {
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+.chat-message {
+  margin-bottom: 10px;
+}
